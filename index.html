@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="filter">
+            <div class="filter-item">
+                <select name="foor" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <select name="foor" id="">
+                    <option value="1">Standart</option>
+                    <option value="2">Deluxe</option>
+                    <option value="3">VIP</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="used">Dolu</label><input type="checkbox" name="used" id="used">
+            </div>
+            <div class="filter-item">
+                <label for="min-price">Minimal Qiymet</label>
+                <input id="min-price" type="text">
+                <label for="max-price">Maksimal Qiymet</label>
+                <input id="max-price" type="text">
+            </div>
+            <div class="filter-item">
+                <button class="new-room-button">Yeni Otaq</button>
+            </div>
+        </section>
+        <section class="info-table">
+            <table class="main-table">
+                <thead>
+                    <th>Sira</th>
+                    <th>Nomre</th>
+                    <th>Mertebe</th>
+                    <th>Tipi</th>
+                    <th>Dolu</th>
+                    <th>Bosalma</th>
+                    <th>Istifadeci</th>
+                    <th>Qiymet (gun)</th>
+                    <th>Doldur</th>
+                    <th>Bosalt</th>
+                    <th>Sil</th>
+                </thead>
+                <tbody class="main-body">
+                    <tr>
+                        <td>1</td>
+                        <td>109</td>
+                        <td>2</td>
+                        <td>Deluxe</td>
+                        <td><i class="fa-solid fa-circle-check"></i></td>
+                        <td>11:00 13.10.2022</td>
+                        <td>Orxan Allahyarov</td>
+                        <td>120AZN</td>
+                        <td><i class="fa-solid fa-circle-plus button"></i></td>
+                        <td><i class="fa-solid fa-user-minus button"></i></td>
+                        <td><i class="fa-solid fa-trash button"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="general-info">
+            <div>Umumi otaq sayi: <span></span></div>
+            <div>Bos Otaq Sayi: <span></span></div>
+            <div>Umumi Gelir: <span></span></div>
+        </section>
+    </div>
+
+    <div class="backdrop"></div>
+
+
+
+    <div class="modal">
+        <div class="title">asdfsadfasdf</div>
+        <div class="content">asdfasdf</div>
+        <div class="buttons">
+            <button>Yadda Saxla</button>
+            <button class="exit-button">Cix</button>
+        </div>
+        <i class="fa-sharp fa-solid fa-xmark exit"></i>
+    </div>
+
+    <div class="modal add-room-modal modal-open">
+        <div class="title">Otaq Əlavə Et</div>
+        <div class="content">
+            <form action="">
+                <div class="number-div">
+
+                    <label for="number">Nömrə</label>
+                    <input class="" type="text" id="number" name="number" placeholder="Nömrə">
+                    <small></small>
+                </div>
+                <div class="floor-div">
+                    <label for="floor">Mərtəbə</label>
+                    <input type="text" id="floor" name="floor" placeholder="Mərtəbə">
+                    <small></small>
+                </div>
+                <div class="type-div">
+                    <label for="type">Tipi</label>
+                    <select id="type" name="type" id="">
+                        <option value="standart">Standart</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="vip">VIP</option>
+                    </select>
+                    <small></small>
+                </div>
+                <div class="price-div">
+                    <label for="price">Qiymet</label>
+                    <input type="text" id="price" name="price" placeholder="Qiymet">
+                    <small></small>
+                </div>
+            </form>
+        </div>
+        <div class="buttons">
+            <button class="save">Yadda Saxla</button>
+            <button class="exit-button">Cix</button>
+        </div>
+        <i class="fa-sharp fa-solid fa-xmark exit"></i>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
